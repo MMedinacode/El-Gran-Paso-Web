@@ -38,7 +38,7 @@
   - Rango informado en Google por 4 personas: $5.000-10.000 por persona.
   - Su letrero dice 'El Gran Paso · Local 8' y lleva un ancla como logo.
   - Una reseña confirma que están dentro del Mercado Lo Valledor.
-  - 3 reseñas reales con nombre.
+  - 3 reseñas con nombre.
   - Fotos: 5 fotos propias del local publicadas en su ficha de Google.
   - GANCHO DE VENTA 1: Google muestra 'Agregar sitio web'. NO TIENEN SITIO.
   - GANCHO DE VENTA 2: su ficha NO ESTÁ RECLAMADA ('Reclamar este negocio'), así que
@@ -54,7 +54,7 @@
   - SIN INSTAGRAM ENCONTRADO. Preguntarles si tienen cuenta.
   - WHATSAPP: el número es móvil pero no se pudo confirmar que tenga WhatsApp.
   -   Por eso la página usa tel:.
-  - Todas sus reseñas son de hace un año. Conviene que pidan reseñas nuevas.
+  - Todas nuestras reseñas son de hace un año. Conviene que pidan reseñas nuevas.
   - Falta el logo real en vector (el del ancla del letrero).
   - Faltan fotos de los sándwiches y de la comida caliente, que son de lo más nombrado.
   ============================================================
@@ -64,6 +64,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Radio+Canada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "El Gran Paso",
+  "description": "El Gran Paso — café, pastelería y sándwiches abiertos las 24 horas en el Mercado Lo Valledor, Pedro Aguirre Cerda. 4.4★ en Google.",
+  "image": "https://mmedinacode.github.io/El-Gran-Paso-Web/fotos/local.jpg",
+  "url": "https://mmedinacode.github.io/El-Gran-Paso-Web/",
+  "telephone": "+56944868252",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CL",
+    "streetAddress": "La Rural 06, Lo Valledor",
+    "addressLocality": "Pedro Aguirre Cerda",
+    "addressRegion": "Región Metropolitana"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -137,7 +167,7 @@
         <article class="info-card reveal">
           <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.4 2"/></svg></div>
           <h3>24 horas, de verdad</h3>
-          <p>Su ficha de Google dice 'Abierto las 24 horas'. En un mercado mayorista que se mueve de madrugada, eso no es un detalle: es el negocio.</p>
+          <p>Abierto las 24 horas. En un mercado mayorista que se mueve de madrugada, eso no es un detalle: es el negocio.</p>
         </article>
         <article class="info-card reveal">
           <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 5c0-1.4 1-1.4 1-2.6M12 5c0-1.4 1-1.4 1-2.6"/></svg></div>
@@ -170,7 +200,7 @@
             <strong>abierto las 24 horas</strong>.
           </p>
           <p>
-            Con <strong>4.4 estrellas</strong>, lo que dicen sus reseñas va por dos lados:
+            Con <strong>4.4 estrellas</strong>, lo que dicen nuestras reseñas va por dos lados:
             el producto (<em>"unos ricos postres, sándwiches y comida para este frío"</em>) y
             el local en sí (<em>"desde que ingresas se nota… sus decoraciones, la amabilidad
             de quienes atienden y por supuesto sus preparaciones"</em>).
@@ -342,5 +372,6 @@
 <script>window.HORARIO={dias:["Abierto 24 h","Abierto 24 h","Abierto 24 h","Abierto 24 h","Abierto 24 h","Cerrado","Abierto 24 h"],fuente:"Google Maps, 11-09-2026"};</script>
 <script src="horario.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
