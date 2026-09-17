@@ -3,7 +3,7 @@
    ============================================================
    ⚠️ SIN PRECIOS. No publican carta con precios en ningún canal, y su ficha
    de Google ni siquiera está reclamada. Los productos listados salen de sus
-   reseñas reales y de sus propias fotos. Ninguno inventado. Pedirle la
+   reseñas y de sus propias fotos. Ninguno inventado. Pedirle la
    carta al local para cargar los precios.
    ============================================================ */
 
@@ -13,7 +13,7 @@ const MENU = {
     "items": [
       {
         "n": "Café",
-        "d": "\"El mejor lugar para tomar un rico café con un pastelito, 10 de 10\" — reseña real",
+        "d": "\"El mejor lugar para tomar un rico café con un pastelito, 10 de 10\" — reseña",
         "img": "latte.jpg"
       },
       {
@@ -33,7 +33,7 @@ const MENU = {
       },
       {
         "n": "Postres",
-        "d": "\"Unos ricos postres\" — cita textual de una reseña real",
+        "d": "\"Unos ricos postres\" — cita textual de una reseña",
         "img": "mesa.jpg"
       }
     ]
@@ -43,11 +43,11 @@ const MENU = {
     "items": [
       {
         "n": "Sándwiches",
-        "d": "\"Unos ricos postres, sándwiches y comida para este frío\" — reseña real"
+        "d": "\"Unos ricos postres, sándwiches y comida para este frío\" — reseña"
       },
       {
         "n": "Comida caliente",
-        "d": "\"Comida para este frío… delicioso todo, súper recomendado\" — reseña real"
+        "d": "\"Comida para este frío… delicioso todo, súper recomendado\" — reseña"
       }
     ]
   }
